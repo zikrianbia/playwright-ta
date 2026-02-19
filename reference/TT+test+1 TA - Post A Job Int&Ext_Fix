@@ -1,0 +1,611 @@
+{
+    "title": "TT+test+1 TA - Post A Job Int&Ext",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1478,
+            "height": 1183,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://uat.betalented.ai/logout"
+        },
+        {
+            "type": "change",
+            "target": "main",
+            "selectors": [
+                "aria/Enter your email",
+                "#kt_login_signin_form > div:nth-of-type(2) > input",
+                "xpath///*[@id=\"kt_login_signin_form\"]/div[2]/input",
+                "pierce/#kt_login_signin_form > div:nth-of-type(2) > input"
+            ],
+            "value": "tt+test+1@jobtech.co"
+        },
+        {
+            "type": "change",
+            "target": "main",
+            "selectors": [
+                "aria/Enter your password",
+                "div.form-group input",
+                "xpath///*[@id=\"kt_login_signin_form\"]/div[3]/div[2]/input",
+                "pierce/div.form-group input"
+            ],
+            "value": "1234"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Sign in",
+                    "aria/[role=\"generic\"]"
+                ],
+                "#kt_login_signin_submit > span",
+                "xpath///*[@id=\"kt_login_signin_submit\"]/span",
+                "pierce/#kt_login_signin_submit > span"
+            ],
+            "offsetX": 14.84716796875,
+            "offsetY": 13.173583984375
+        },
+        {
+            "type": "waitForElement",
+            "target": "main",
+            "selectors": [
+                "main > div > div.relative > div > div:nth-of-type(1) > div.flex div:nth-of-type(1) > p",
+                "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/div/div[1]/div[1]/div[2]/div[1]/p",
+                "pierce/main > div > div.relative > div > div:nth-of-type(1) > div.flex div:nth-of-type(1) > p",
+                "text/Welcome, 1"
+            ]
+        },
+        {
+            "type": "navigate",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://uat.betalented.ai/talentattraction",
+                    "title": "Talent Attraction | Talented"
+                }
+            ],
+            "url": "https://uat.betalented.ai/talentattraction"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.fixed > div.cursor-pointer > span"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[3]/div[2]/span"
+                ],
+                [
+                    "pierce/div.fixed > div.cursor-pointer > span"
+                ]
+            ],
+            "offsetX": 3.53466796875,
+            "offsetY": 13.65966796875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "div.transition-all > div:nth-of-type(2) span",
+                "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[3]/div[1]/div[2]/div/span",
+                "pierce/div.transition-all > div:nth-of-type(2) span",
+                "text/add_notes"
+            ],
+            "offsetX": 11.5555419921875,
+            "offsetY": 12.642333984375
+        },
+        {
+            "type": "waitForElement",
+            "target": "main",
+            "selectors": [
+                "aria/Post a job",
+                "h2",
+                "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[1]/div/h2",
+                "pierce/h2"
+            ]
+        },
+        {
+            "type": "waitForExpression",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://uat.betalented.ai/talentattraction/post",
+                    "title": "Title"
+                }
+            ],
+            "timeout": 8000,
+            "expression": "true"
+        },
+        {
+            "type": "change",
+            "selectors": [
+                "#err-title input",
+                "xpath///*[@id=\"err-title\"]/div[2]/input",
+                "pierce/#err-title input"
+            ],
+            "value": "QA Engineer (Automated Script)"
+        },
+        {
+            "type": "change",
+            "timeout": 30000,
+            "selectors": [
+                "aria/rdw-editor",
+                "div.react-draft-editor-class > div > div > div",
+                "xpath///*[@id=\"rdw-wrapper-9004\"]/div[2]/div/div/div",
+                "pierce/div.react-draft-editor-class > div > div > div"
+            ],
+            "value": "A Quality Assurance (QA) Engineer ensures software products meet quality standards by developing test plans, executing manual/automated tests, and identifying bugs before release. They collaborate with developers to analyze requirements, perform regression testing, and document issues. Key skills include automation tools (Selenium, Appium), scripting (Python, Java), and bug-tracking systems (Jira)."
+        },
+        {
+            "type": "waitForElement",
+            "timeout": 8000,
+            "target": "main",
+            "selectors": [
+                "div.font-default > div > main div.flex > div:nth-of-type(3) > div:nth-of-type(1) p",
+                "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/form/div[2]/div[3]/div[1]/div[2]/div/p",
+                "pierce/div.font-default > div > main div.flex > div:nth-of-type(3) > div:nth-of-type(1) p",
+                "text/We've found 9"
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "#err-jobOwnerEmail div.css-19bb58m",
+                "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]",
+                "pierce/#err-jobOwnerEmail div.css-19bb58m"
+            ],
+            "offsetX": 30.48260498046875,
+            "offsetY": 10.05206298828125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "div.font-default > div > main p.text-sm",
+                "xpath///*[@id=\"react-select-16-option-0\"]/div/div/p[2]",
+                "pierce/div.font-default > div > main p.text-sm",
+                "text/tt+test+4@jobtech.co"
+            ],
+            "offsetX": 20.56591796875,
+            "offsetY": 5.065948486328125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-title input"
+                ],
+                [
+                    "xpath///*[@id=\"err-title\"]/div[2]/input"
+                ],
+                [
+                    "pierce/#err-title input"
+                ]
+            ],
+            "offsetX": 176.55902099609375,
+            "offsetY": 15.065948486328125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "#err-hiringManagerEmail div.css-19bb58m",
+                "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]",
+                "pierce/#err-hiringManagerEmail div.css-19bb58m"
+            ],
+            "offsetX": 116.15625,
+            "offsetY": 7.05206298828125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "div.font-default > div > main p.text-sm",
+                "xpath///*[@id=\"react-select-3-option-0\"]/div/div/p[2]",
+                "pierce/div.font-default > div > main p.text-sm",
+                "text/tt+test+3@jobtech.co"
+            ],
+            "offsetX": 39.23956298828125,
+            "offsetY": 2.065948486328125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "form > div:nth-of-type(1) div:nth-of-type(2) > div.grid > div:nth-of-type(2) div.css-1if3bqk"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]"
+                ],
+                [
+                    "pierce/form > div:nth-of-type(1) div:nth-of-type(2) > div.grid > div:nth-of-type(2) div.css-1if3bqk"
+                ]
+            ],
+            "offsetX": 356.8055419921875,
+            "offsetY": 25.069427490234375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Others"
+                ],
+                [
+                    "#react-select-61-option-0"
+                ],
+                [
+                    "xpath///*[@id=\"react-select-61-option-0\"]"
+                ],
+                [
+                    "pierce/#react-select-61-option-0"
+                ],
+                [
+                    "text/Others"
+                ]
+            ],
+            "offsetX": 288.90277099609375,
+            "offsetY": 28.0867919921875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-employmentTypes div.css-1if3bqk"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]"
+                ],
+                [
+                    "pierce/#err-employmentTypes div.css-1if3bqk"
+                ]
+            ],
+            "offsetX": 356.46179962158203,
+            "offsetY": 19.09027099609375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                "aria/Full-Time",
+                "#react-select-6-option-0",
+                "xpath///*[@id=\"react-select-6-option-0\"]",
+                "pierce/#react-select-6-option-0",
+                "text/Full-Time"
+            ],
+            "offsetX": 47.447906494140625,
+            "offsetY": 24.10760498046875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-jobTypes div.css-19bb58m"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]"
+                ],
+                [
+                    "pierce/#err-jobTypes div.css-19bb58m"
+                ]
+            ],
+            "offsetX": 103.8228759765625,
+            "offsetY": 15.09716796875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Permanent"
+                ],
+                [
+                    "#react-select-63-option-0"
+                ],
+                [
+                    "xpath///*[@id=\"react-select-63-option-0\"]"
+                ],
+                [
+                    "pierce/#react-select-63-option-0"
+                ],
+                [
+                    "text/Permanent"
+                ]
+            ],
+            "offsetX": 126.90277099609375,
+            "offsetY": 19.10760498046875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "form > div:nth-of-type(1) div:nth-of-type(2) > div.grid"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/form/div[1]/div[2]/div[2]/div[2]"
+                ],
+                [
+                    "pierce/form > div:nth-of-type(1) div:nth-of-type(2) > div.grid"
+                ]
+            ],
+            "offsetX": 569.5590209960938,
+            "offsetY": 199.0555419921875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "form > div:nth-of-type(1) div.grid > div:nth-of-type(1) div.rounded-full > div"
+                ],
+                [
+                    "xpath///*[@id=\"err-workplaceType\"]/div[2]/div[1]/button/div[1]/div"
+                ],
+                [
+                    "pierce/form > div:nth-of-type(1) div.grid > div:nth-of-type(1) div.rounded-full > div"
+                ]
+            ],
+            "offsetX": 5.22216796875,
+            "offsetY": 6.08331298828125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ]
+            ],
+            "offsetX": 18.479164123535156,
+            "offsetY": 12.13189697265625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ]
+            ],
+            "offsetX": 40.479164123535156,
+            "offsetY": 8.13189697265625,
+            "duration": 769.5999999642372
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]/div[2]"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(1) div.css-19bb58m"
+                ]
+            ],
+            "offsetX": 40.479164123535156,
+            "offsetY": 8.13189697265625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Singapore"
+                ],
+                [
+                    "#react-select-64-option-0"
+                ],
+                [
+                    "xpath///*[@id=\"react-select-64-option-0\"]"
+                ],
+                [
+                    "pierce/#react-select-64-option-0"
+                ],
+                [
+                    "text/Singapore"
+                ]
+            ],
+            "offsetX": 71.55902099609375,
+            "offsetY": 21.142333984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(2) div.css-1if3bqk"
+                ],
+                [
+                    "xpath///*[@id=\"react-default-select\"]/div/div[1]"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(2) div.css-1if3bqk"
+                ]
+            ],
+            "offsetX": 222.8055419921875,
+            "offsetY": 32.12493896484375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(3) input"
+                ],
+                [
+                    "xpath///*[@id=\"err-location-0\"]/div[3]/div[2]/input"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(3) input"
+                ]
+            ],
+            "offsetX": 53.2291259765625,
+            "offsetY": 17.12152099609375
+        },
+        {
+            "type": "change",
+            "target": "main",
+            "selectors": [
+                [
+                    "#err-location-0 > div:nth-of-type(3) input"
+                ],
+                [
+                    "xpath///*[@id=\"err-location-0\"]/div[3]/div[2]/input"
+                ],
+                [
+                    "pierce/#err-location-0 > div:nth-of-type(3) input"
+                ]
+            ],
+            "value": "00001"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Min"
+                ],
+                [
+                    "div.flex > div:nth-of-type(4) div:nth-of-type(2) > input"
+                ],
+                [
+                    "xpath///*[@id=\"err-salary\"]/div[2]/input"
+                ],
+                [
+                    "pierce/div.flex > div:nth-of-type(4) div:nth-of-type(2) > input"
+                ]
+            ],
+            "offsetX": 60.44439697265625,
+            "offsetY": 12.1492919921875
+        },
+        {
+            "type": "change",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Min"
+                ],
+                [
+                    "div.flex > div:nth-of-type(4) div:nth-of-type(2) > input"
+                ],
+                [
+                    "xpath///*[@id=\"err-salary\"]/div[2]/input"
+                ],
+                [
+                    "pierce/div.flex > div:nth-of-type(4) div:nth-of-type(2) > input"
+                ]
+            ],
+            "value": "3000"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(4) div:nth-of-type(3) > div.grid > div:nth-of-type(2) div:nth-of-type(1) > div"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/form/div[1]/div[2]/div[4]/div/div[3]/div[2]/div[2]/button/div[1]/div"
+                ],
+                [
+                    "pierce/div:nth-of-type(4) div:nth-of-type(3) > div.grid > div:nth-of-type(2) div:nth-of-type(1) > div"
+                ]
+            ],
+            "offsetX": 11.2291259765625,
+            "offsetY": 11.1492919921875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(4) div:nth-of-type(3) > div.grid > div:nth-of-type(3) div:nth-of-type(1) > div"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/form/div[1]/div[2]/div[4]/div/div[3]/div[2]/div[3]/button/div[1]/div"
+                ],
+                [
+                    "pierce/div:nth-of-type(4) div:nth-of-type(3) > div.grid > div:nth-of-type(3) div:nth-of-type(1) > div"
+                ]
+            ],
+            "offsetX": 8.2291259765625,
+            "offsetY": 8.14581298828125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Post",
+                    "aria/[role=\"generic\"]"
+                ],
+                [
+                    "div.mt-6 div"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[3]/button/div"
+                ],
+                [
+                    "pierce/div.mt-6 div"
+                ]
+            ],
+            "offsetX": 26.427001953125,
+            "offsetY": 8.2152099609375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-w-screen button.bg-skin-color-primary"
+                ],
+                [
+                    "xpath///*[@id=\"__next\"]/main/div[3]/div[1]/div[2]/div/div[1]/div[2]/div/div[2]/button[2]"
+                ],
+                [
+                    "pierce/div.min-w-screen button.bg-skin-color-primary"
+                ]
+            ],
+            "offsetX": 51.42706298828125,
+            "offsetY": 27.7742919921875
+        },
+        {
+            "type": "waitForElement",
+            "target": "main",
+            "selectors": [
+                "aria/QA Engineer Automated Script",
+                "div.gradient-section-primary h4",
+                "xpath///*[@id=\"__next\"]/main/div[3]/div/main/div/div[2]/div[1]/div[2]/div/div[1]/h4",
+                "pierce/div.gradient-section-primary h4"
+            ]
+        }
+    ]
+}

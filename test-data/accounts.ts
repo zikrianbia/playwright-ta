@@ -91,14 +91,6 @@ export const JOBTECH_JOB_OWNER: TestAccount = {
     role: 'Job Owner + Partner Admin',
 };
 
-export const JOBTECH_JOB_OWNER_2: TestAccount = {
-    get email() { return getEnvOrThrow('JOBTECH_JOBOWNER2_EMAIL'); },
-    get password() { return getPassword(); },
-    get name() { return getEnvOrThrow('JOBTECH_JOBOWNER2_NAME'); },
-    workspace: 'JobTech',
-    role: 'Job Owner + Partner Admin',
-};
-
 // ──────────────────────────────────────────────
 // Grouped by workspace for convenience
 // ──────────────────────────────────────────────
@@ -117,6 +109,5 @@ export const ACCOUNTS = {
     jobtech: {
         superadmin: JOBTECH_SUPERADMIN,
         jobOwner: JOBTECH_JOB_OWNER,
-        jobOwner2: JOBTECH_JOB_OWNER_2,
     },
 } as const;

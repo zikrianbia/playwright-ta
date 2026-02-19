@@ -136,19 +136,5 @@ test.describe('Login Flow - Verify All Accounts', () => {
         await loginPage.expectLoggedIn();
     });
 
-    test('JobTech Job Owner 2 (Val) can login successfully', async ({ page }) => {
-        const loginPage = new LoginPage(page);
-        const account = ACCOUNTS.jobtech.jobOwner2;
 
-        await loginPage.goto();
-        await loginPage.expectLoginPageVisible();
-        await loginPage.login(account.email, account.password);
-
-        await page.waitForFunction(
-            () => !window.location.pathname.includes('/login'),
-            { timeout: 30000 }
-        );
-        await page.waitForLoadState('networkidle');
-        await loginPage.expectLoggedIn();
-    });
 });
