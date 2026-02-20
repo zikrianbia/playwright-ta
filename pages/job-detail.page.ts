@@ -26,11 +26,12 @@ export class JobDetailPage {
         this.page = page;
 
         // Tab selectors — will be refined when we explore the actual UI
-        this.aboutJobTab = page.locator('[data-testid="tab-about-job"], [role="tab"]:has-text("About")');
-        this.jobseekerMatchesTab = page.locator('[data-testid="tab-jobseeker-matches"], [role="tab"]:has-text("Jobseeker Match")');
-        this.internalMatchesTab = page.locator('[data-testid="tab-internal-matches"], [role="tab"]:has-text("Internal Match")');
-        this.externalMatchesTab = page.locator('[data-testid="tab-external-matches"], [role="tab"]:has-text("External Match")');
-        this.applicantsTab = page.locator('[data-testid="tab-applicants"], [role="tab"]:has-text("Applicant")');
+        // Tab selectors — updated to match actual UI (buttons with text and counts)
+        this.aboutJobTab = page.locator('[data-testid="tab-about-job"], [role="tab"]:has-text("About"), button:has-text("About the job")');
+        this.jobseekerMatchesTab = page.locator('[data-testid="tab-jobseeker-matches"], [role="tab"]:has-text("Jobseeker"), button:has-text("Jobseeker matches")');
+        this.internalMatchesTab = page.locator('[data-testid="tab-internal-matches"], [role="tab"]:has-text("Internal Match"), button:has-text("Internal Match")');
+        this.externalMatchesTab = page.locator('[data-testid="tab-external-matches"], [role="tab"]:has-text("External Match"), button:has-text("External Match")');
+        this.applicantsTab = page.locator('[data-testid="tab-applicants"], [role="tab"]:has-text("Applicant"), button:has-text("Applicant")');
 
         // Banners
         this.pendingApprovalBanner = page.locator('[data-testid="pending-approval-banner"], .banner:has-text("Pending"), .alert:has-text("approval")');
