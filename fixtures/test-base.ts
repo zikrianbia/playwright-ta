@@ -6,6 +6,7 @@ import { JobDetailPage } from '../pages/job-detail.page';
 import { JobApprovalPage } from '../pages/job-approval.page';
 import { ApplicantsPage } from '../pages/applicants.page';
 import { JobseekerMatchesPage } from '../pages/jobseeker-matches.page';
+import { TalentAttractionPage } from '../pages/talent-attraction.page';
 import { type TestAccount } from '../test-data/accounts';
 
 /**
@@ -19,6 +20,7 @@ type CustomFixtures = {
     jobApprovalPage: JobApprovalPage;
     applicantsPage: ApplicantsPage;
     jobseekerMatchesPage: JobseekerMatchesPage;
+    talentAttractionPage: TalentAttractionPage;
     loginAs: (account: TestAccount) => Promise<Page>;
 };
 
@@ -49,6 +51,10 @@ export const test = base.extend<CustomFixtures>({
 
     jobseekerMatchesPage: async ({ page }, use) => {
         await use(new JobseekerMatchesPage(page));
+    },
+
+    talentAttractionPage: async ({ page }, use) => {
+        await use(new TalentAttractionPage(page));
     },
 
     /**
